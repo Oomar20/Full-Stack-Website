@@ -1,0 +1,21 @@
+<header class="main-header" style="background-image: url('/Images/Header Background.jpg')">
+    <nav class="main-nav nav">
+        <ul>
+            <li><a href="/memberships">MEMBERSHIPS</a></li>
+            <li><a href="/store">STORE</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <% if (user) { %>
+                <li><a href="/account">ACCOUNT</a></li>
+                <li>
+                    <form id="logout-form" action="/logout" method="POST" style="display: inline;">
+                        <button type="submit" class="nav-button">LOGOUT</button>
+                    </form>
+                </li>
+                <% } else { %>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <% } %>
+        </ul>
+    </nav>
+    <h1 class="band-name band-name-large">The Generics</h1>
+</header>

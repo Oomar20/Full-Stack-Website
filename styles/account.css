@@ -1,0 +1,165 @@
+/* account.css */
+
+/* Reset default browser styles */
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    color: #777;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+/* Navigation Styles */
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0 5%;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav {
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Header Styles */
+.main-header {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero", sans-serif;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+body,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Styling for user details */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2em;
+}
+
+.user-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    scale: 1.3;
+}
+
+.user-card h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.user-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0.5em 0;
+}
+
+.user-card p span {
+    font-weight: bold;
+    color: #333;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.user-input {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#submit-button {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0.5em 0;
+}

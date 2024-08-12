@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/register-style.css" />
+    <title>Register</title>
+</head>
+
+<body>
+
+    <%- include('partials/header') %>
+
+        <div class="panel registration-form">
+            <h2 class="registration-header">Register</h2>
+            <form id="register-form">
+                <label for="email" class="registration-label">Email</label>
+                <input type="email" id="email" name="email" class="registration-input" required>
+
+                <label for="password" class="registration-label">Password</label>
+                <input type="password" id="password" name="password" class="registration-input" required>
+
+                <label for="name" class="registration-label">Name</label>
+                <input type="text" id="name" name="name" class="registration-input" required>
+
+                <label for="surname" class="registration-label">Surname</label>
+                <input type="text" id="surname" name="surname" class="registration-input" required>
+
+                <label for="gender" class="registration-label">Gender</label>
+                <select id="gender" name="gender" class="registration-input" required>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+
+                <label for="age" class="registration-label">Age</label>
+                <input type="number" id="age" name="age" class="registration-input" min="18" max="99" required>
+
+                <button type="submit" class="registration-button">Register</button>
+            </form>
+            <p class="login-prompt">Already have an account? <a href="/login" class="login-link">Login here</a></p>
+        </div>
+
+        <script src="/register.js"></script>
+</body>
+
+</html>

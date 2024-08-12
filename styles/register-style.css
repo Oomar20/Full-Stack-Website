@@ -1,0 +1,177 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    color: #777;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+/* Navigation Styles */
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0 5%;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav {
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Header Styles */
+.main-header {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero", sans-serif;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.registration-form {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.registration-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.registration-header {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.registration-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+    text-align: left;
+}
+
+.registration-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.registration-input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.registration-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-button:hover {
+    background-color: #0056b3;
+}
+
+.login-prompt {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.login-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Adding some styling to form container */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="/styles/account.css">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+
+        <main>
+            <div class="user-card">
+                <form id="account-form" action="/account" method="POST">
+                    <label for="email">
+                        <p><span>Email:</span></p>
+                    </label>
+                    <input type="text" id="email" name="email" value="<%= user.email %>" class="user-input">
+                    <label for="name">
+                        <p><span>Name:</span></p>
+                    </label>
+                    <input type="text" id="name" name="name" value="<%= user.name %>" class="user-input">
+                    <label for="surname">
+                        <p><span>Surname:</span></p>
+                    </label>
+                    <input type="text" id="surname" name="surname" value="<%= user.surname %>" class="user-input">
+                    <label for="gender">
+                        <p><span>Gender:</span></p>
+                    </label>
+                    <select name="gender" id="gender" class="user-input">
+                        <option value="Male" <% if (user.gender==='male' ) { %> selected <% } %>>Male</option>
+                        <option value="Female" <% if (user.gender==='female' ) { %> selected <% } %>>Female</option>
+                    </select>
+                    <label for="age">
+                        <p><span>Age:</span></p>
+                    </label>
+                    <input type="text" id="age" name="age" value="<%= user.age %>" class="user-input">
+
+                    <button type="submit" id="submit-button" ">Save Changes</button>
+                </form>
+            </div>
+        </main>
+
+        <script src=" account.js"></script>
+
+</body>
+
+</html>

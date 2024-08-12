@@ -1,0 +1,65 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    color: #777;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+/* Navigation Styles */
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0 5%;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav {
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
